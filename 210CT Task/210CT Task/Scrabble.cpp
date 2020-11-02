@@ -99,13 +99,10 @@ void Scrabble::Setup()
 	for (int i = human_players + 1; i < human_players + ai_players + 1; i++) { players.push_back(new AIPlayer(i, PlayerType::eAI)); }
 
 	for (auto player : players) { player->Replenish(bag); }
-
-	
 }
 
 void Scrabble::Step()
 {
-
 	for (auto& player : players)
 	{
 		
@@ -118,7 +115,6 @@ void Scrabble::Step()
 
 		if (Won()) { system("CLS"); return; }
 	}
-	
 }
 
 bool Scrabble::Won()

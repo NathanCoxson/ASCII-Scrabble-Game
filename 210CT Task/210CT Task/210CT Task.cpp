@@ -9,7 +9,7 @@ int main()
 
 	while (true)
 	{
-		Scrabble scrabble("Words.txt");
+		Scrabble scrabble("actualscrabblewords.txt");
 	}
 
 	return 0;

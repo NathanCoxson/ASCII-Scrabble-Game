@@ -374,7 +374,6 @@ ValidatedWord Board::ApplyWord(string word, Direction dir, int x, int y, vector<
 			break;
 		}
 
-
 		for (int i = 0; i < word.length(); i++)
 		{
 

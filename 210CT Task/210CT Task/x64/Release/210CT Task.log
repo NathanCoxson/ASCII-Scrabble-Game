@@ -1,0 +1,12 @@
+﻿  210CT Task.cpp
+  Board.cpp
+C:\Users\natha\Desktop\Github\Cov-Uni-Year-2-ASCII-Scrabble-Game\210CT Task\210CT Task\Board.cpp(194): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\natha\Desktop\Github\Cov-Uni-Year-2-ASCII-Scrabble-Game\210CT Task\210CT Task\Board.cpp(195): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  HumanPlayer.cpp
+  Scrabble.cpp
+  Generating code
+  6 of 848 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  210CT Task.vcxproj -> C:\Users\natha\Desktop\Github\Cov-Uni-Year-2-ASCII-Scrabble-Game\210CT Task\x64\Release\210CT Task.exe

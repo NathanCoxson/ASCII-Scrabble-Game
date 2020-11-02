@@ -19,21 +19,8 @@ int HumanPlayer::Turn(Board& board, vector<Player*>& players)
 	int word_x = 0;
 	int word_y = 0;
 	string dir;
-	//stringstream format1;
-	//stringstream format2;
-	//stringstream format3;
-	//stringstream format4;
-	//string input1;
-	//string input2;
-	//string input3;
-	//string input4;
 	string word = "";
 	string error = "---------------------------------------------------------------";
-
-	//cout << std::flush;
-
-	//cout << "\033c";
-
 	string format_tiles;
 
 	for (auto tile : tiles)
