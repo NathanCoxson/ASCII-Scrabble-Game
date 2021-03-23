@@ -1,2 +1,2 @@
-# Cov-Uni-210
+# Ascii Scrabble Game
 Year 2 Games Technology Project - ASCII Scrabble
