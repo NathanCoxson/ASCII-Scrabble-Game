@@ -153,9 +153,6 @@
   <ItemGroup>
     <ClCompile Include="210CT Task.cpp" />
     <ClCompile Include="AIPlayer.cpp" />
-    <ClCompile Include="AIWordHash.cpp">
-      <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">stdcpp17</LanguageStandard>
-    </ClCompile>
     <ClCompile Include="Bag.cpp" />
     <ClCompile Include="Board.cpp" />
     <ClCompile Include="HumanPlayer.cpp" />
@@ -169,7 +166,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AIPlayer.h" />
-    <ClInclude Include="AIWordHash.h" />
     <ClInclude Include="Bag.h" />
     <ClInclude Include="Board.h" />
     <ClInclude Include="Common.h" />

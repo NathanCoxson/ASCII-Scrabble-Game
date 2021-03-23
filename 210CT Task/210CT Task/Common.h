@@ -132,16 +132,6 @@ struct AIPlay
 };
 
 ///<summary>
-///DEPRECATED - Used to read an AI HASH MAP file
-///</summary>
-void AIMapRead(string path, map<string, vector<string>>& map);
-
-///<summary>
-///DEPRECATED - Used to write AI HASH MAP to a file
-///</summary>
-void AIMapWrite(string path, map<string, vector<string>>& map);
-
-///<summary>
 ///This function will take a user input and store it in the parameter reference
 ///</summary>
 void UserInput(int& var);
@@ -157,22 +147,12 @@ void UserInput(string& var);
 void UserInput(char& var);
 
 ///<summary>
-///DEPRECATED - This function will remove a character from a string
-///</summary>
-bool PopCharInString(char target, string& location);
-
-///<summary>
-///DEPRECATED - This function will determine whether a word is within another word
-///</summary>
-bool WordInOtherWord(string word, string other);
-
-///<summary>
-///DEPRECATED - This function will find the location of a string within a vector of strings
+///This function will find the location of a string within a vector of strings
 ///</summary>
 SearchResult BinarySearch(vector<string>& words, string target);
 
 ///<summary>
-///DEPRECATED - This function will find the location of a string within a vector of BasicWords
+///This function will find the location of a string within a vector of BasicWords
 ///</summary>
 SearchResult BinarySearch(vector<BasicWord>& words, string target);
 

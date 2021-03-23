@@ -54,66 +54,6 @@ void UserInput(char& var)
 	var = output;
 }
 
-void AIMapRead(string path, map<string, vector<string>>& map)
-{
-	std::ifstream input_file(path);
-	string line;
-	string hash;
-	string value;
-	string entry;
-
-	int prev_found;
-	int found;
-	bool parse = true;
-
-	while (getline(input_file, line))
-	{
-		found = line.find(";");
-		if (found != string::npos)
-		{
-			hash = "";
-			
-			for (int i = 0; i < found; i++) hash += line[i];
-			parse = true;
-			while (parse)
-			{
-				prev_found = found;
-				found = line.find(";",found+1);
-				if (found != string::npos)
-				{
-					value = "";
-					for (int i = prev_found+1; i < found; i++) value += line[i];
-					map[hash].push_back(value);
-				}
-				else
-				{
-					parse = false;
-				}
-			}
-		}
-	}
-
-	input_file.close();
-}
-
-void AIMapWrite(string path, map<string, vector<string>>& map)
-{
-	std::ofstream output_file(path);
-
-	for (auto entry : map)
-	{
-		output_file << entry.first << ";";
-		for (auto word : entry.second)
-		{
-			output_file << word << ";";
-		}
-		output_file << std::endl;
-	}
-
-	output_file.close();
-}
-
-
 SearchResult BinarySearch(vector<string>& words, string target)
 {
 	int start = 0;
@@ -260,28 +200,6 @@ void BinaryMergeSort(vector<BasicWord>& words, int size, int block_size)
 			Merge(words, left, mid, right);
 		}
 	}
-}
-
-bool WordInOtherWord(string word, string other)
-{
-	for (int i = 0; i < word.size(); i++)
-	{
-		if (not(PopCharInString(word[i], other))) { return false; }
-	}
-	return true;
-}
-
-bool PopCharInString(char target, string& location)
-{
-	for (int i = 0; i < location.size(); i++)
-	{
-		if (location[i] == target)
-		{
-			location.erase(i, 1);
-			return true;
-		}
-	}
-	return false;
 }
 
 void MergeSort(vector<BasicWord>& words, int size)

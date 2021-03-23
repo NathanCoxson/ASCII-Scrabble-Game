@@ -4,7 +4,6 @@
 #include "Square.h"
 #include "Bag.h"
 #include "WordSet.h"
-#include "AIWordHash.h"
 
 #include <string>
 
@@ -41,7 +40,7 @@ public:
 	ValidatedWord ValidWord(string word, Direction dir, int x, int y, vector<Tile>& tiles);
 
 	///<summary>
-	///Determines if a word can be applied to the board legally. IF so, it will apply it to the board.
+	///Determines if a word can be applied to the board legally. If so, it will apply it to the board.
 	///</summary>
 	ValidatedWord ApplyWord(string word, Direction dir, int x, int y, vector<Tile>& tiles);
 
